@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>WS client</title>
+
+        <script src="sockjs-0.3.4.js"></script>
+        <script src="stomp-2.3.3.js"></script>
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <div style="padding: 15px">
+                <button id="connect" onclick="connect();" style="background-color: cadetblue; color: floralwhite">
+                    Connect
+                </button>
+            </div>
+            
+            <div style="padding: 15px">
+                <label>Broadcast</label>
+                <textarea id="broadcastResult" rows="20" cols="50" style="width: 100%"></textarea>
+            </div>
+            
+            <div style="padding: 15px">
+                <label>Private</label>
+                <textarea id="privateResult" rows="10" cols="50" style="width: 100%"></textarea>
+            </div>
+        </div>
+    </body>
+
+</html>
